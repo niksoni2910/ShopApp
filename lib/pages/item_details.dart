@@ -40,7 +40,7 @@ class _ItemDetailsState extends State<ItemDetails> {
             ),
             const SizedBox(height: 16),
             Image.asset(
-              'assets/item1.jpg',
+              'assets/img/item1.jpg',
               height: 200,
               fit: BoxFit.contain,
             ),

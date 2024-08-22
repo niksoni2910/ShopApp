@@ -1,6 +1,8 @@
 import 'package:catalog/pages/item_details.dart';
+import 'package:catalog/pages/login.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'pages/add_item4.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -13,10 +15,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
-      home: ItemDetails(),
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
+      ),
+      // home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: LoginPage(),
+
     );
   }
 }
-
 
